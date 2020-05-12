@@ -46,6 +46,7 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
+    jekyll-mermaid (1.0.0)
     jekyll-octicons (9.5.0)
       jekyll (>= 3.6, < 5.0)
       octicons (= 9.5.0)
@@ -133,6 +134,7 @@ DEPENDENCIES
   jekyll (~> 4.0.0)
   jekyll-feed (~> 0.12)
   jekyll-gist
+  jekyll-mermaid
   jekyll-octicons
   jekyll-paginate
   jekyll-relative-links
