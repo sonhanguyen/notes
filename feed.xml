@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://sonhanguyen.github.io/notes/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sonhanguyen.github.io/notes/" rel="alternate" type="text/html" /><updated>2020-05-13T07:54:38-05:00</updated><id>https://sonhanguyen.github.io/notes/feed.xml</id><title type="html">The public learner</title><entry><title type="html">Blogging in jupyter notebooks</title><link href="https://sonhanguyen.github.io/notes/tutorial/jupyter/2020/05/12/blogging-in-jupyter.html" rel="alternate" type="text/html" title="Blogging in jupyter notebooks" /><published>2020-05-12T00:00:00-05:00</published><updated>2020-05-12T00:00:00-05:00</updated><id>https://sonhanguyen.github.io/notes/tutorial/jupyter/2020/05/12/blogging-in-jupyter</id><content type="html" xml:base="https://sonhanguyen.github.io/notes/tutorial/jupyter/2020/05/12/blogging-in-jupyter.html">&lt;p&gt;&lt;sub&gt;
-This is a guide for people who want to self-host their blog. If you have no problem putting your content behind someone else’s paywall you can try &lt;a href=&quot;https://medium.com/ai-in-plain-english/how-to-embed-code-or-jupyter-notebook-in-medium-7464411217e7&quot;&gt;embed jupyter notebook in medium&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://sonhanguyen.github.io/notes/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sonhanguyen.github.io/notes/" rel="alternate" type="text/html" /><updated>2020-05-13T08:02:23-05:00</updated><id>https://sonhanguyen.github.io/notes/feed.xml</id><title type="html">The public learner</title><entry><title type="html">Blogging in jupyter notebooks</title><link href="https://sonhanguyen.github.io/notes/tutorial/jupyter/2020/05/12/blogging-in-jupyter.html" rel="alternate" type="text/html" title="Blogging in jupyter notebooks" /><published>2020-05-12T00:00:00-05:00</published><updated>2020-05-12T00:00:00-05:00</updated><id>https://sonhanguyen.github.io/notes/tutorial/jupyter/2020/05/12/blogging-in-jupyter</id><content type="html" xml:base="https://sonhanguyen.github.io/notes/tutorial/jupyter/2020/05/12/blogging-in-jupyter.html">&lt;p&gt;&lt;sub&gt;
+This is a guide for people who want to self-host their blog. If you have no problem putting your content behind someone else’s paywall you can try &lt;a href=&quot;https://medium.com/ai-in-plain-english/how-to-embed-code-or-jupyter-notebook-in-medium-7464411217e7&quot;&gt;embed jupyter notebook in medium&lt;/a&gt;.
 &lt;/sub&gt;&lt;/p&gt;
 
 &lt;p&gt;The other day I had this idea of setting up my personal website to render programming notebooks.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;If you are not familiar with the term, basically a programming notebook is a type of document where you can experiment with code and see the result next to it visuallized as graphs or tables. This is how scientists and data analysts use the power of programming to tell stories.
-&lt;a href=&quot;https://observablehq.com/explore&quot;&gt;observablehq&lt;/a&gt; is an example&lt;/p&gt;
+  &lt;p&gt;If you are not familiar with the term, a programming notebook is a type of document where you can experiment with code and see the result next to it visuallized as graphs or tables. This is how scientists and data analysts use the power of programming to tell stories.
+&lt;em&gt;&lt;a href=&quot;https://observablehq.com/explore&quot;&gt;observablehq&lt;/a&gt; is one example and another one &lt;code class=&quot;highlighter-rouge&quot;&gt;jupyter&lt;/code&gt; is the most widely used computational notebook format&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Anyhow, the tasks were: dockerizing the render script, setting up continuous delivery and lastly come up with a way to make it play with my nextjs/webpack/mdx pipeline which has not been done by anyone before…&lt;/p&gt;
@@ -35,7 +35,7 @@ This is a guide for people who want to self-host their blog. If you have no prob
 
 &lt;p&gt;There are a lot more to fastpages which you can have a look at the &lt;code class=&quot;highlighter-rouge&quot;&gt;README&lt;/code&gt; to find out. Out of the box you can embed code, youtube videos &amp;amp; tweets. They are all powered by &lt;a href=&quot;https://github.com/planetjekyll/awesome-jekyll-plugins&quot;&gt;Jekyll plugins&lt;/a&gt; so if you are familiar with that ecosystem you can start tweaking the theme and add plugins at this point. For comments you can either use &lt;a href=&quot;https://desiredpersona.com/disqus-comments-jekyll/&quot;&gt;disqus (needs set up)&lt;/a&gt; or just host all the comments in your github repo to make your site self-contained.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Stay tune for my future notes!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Stay tune for my future notes&lt;/strong&gt;&lt;/p&gt;
 
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
@@ -43,4 +43,4 @@ This is a guide for people who want to self-host their blog. If you have no prob
       &lt;p&gt;There is also &lt;a href=&quot;https://bookdown.org&quot;&gt;bookdown&lt;/a&gt; if you are interest in using &lt;code class=&quot;highlighter-rouge&quot;&gt;Rmd&lt;/code&gt; instead &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">This is a guide for people who want to self-host their blog. If you have no problem putting your content behind someone else’s paywall you can try embed jupyter notebook in medium</summary></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><summary type="html">This is a guide for people who want to self-host their blog. If you have no problem putting your content behind someone else’s paywall you can try embed jupyter notebook in medium.</summary></entry></feed>
