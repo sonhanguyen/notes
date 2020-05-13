@@ -134,12 +134,12 @@ This is a guide for people who want to self-host their notebooks. If you have no
 
 <blockquote>
   <p>If you are not familiar with the term, a programming notebook is a type of document where you can experiment with code and see the result next to it visuallized as graphs or tables. This is one of the ways scientists and data analysts use the power of programming to tell stories.
-<em><a href="https://observablehq.com/explore">observablehq</a> is one example and another one, <a href="https://jupyter.org">jupyter</a>, is the most widely used computational notebook format.</em></p>
+<em><a href="https://observablehq.com/explore">Observable</a> is one example and another one, <a href="https://jupyter.org">jupyter</a>, is the most widely used computational notebook format.</em></p>
 </blockquote>
 
-<p>Anyhow, the tasks were: dockerizing the render script, setting up continuous delivery and lastly come up with a way to make it play with my nextjs/webpack/mdx pipeline which has not been done by anyone before… After playing with <code class="highlighter-rouge">knitr</code> then a bunch of similar tools for <code class="highlighter-rouge">jupyter</code>, I realised it’s just not worth doing myself. My original motivation is to write more and explore data more, not goofing around with these tools.</p>
+<p>Anyhow, the tasks were: dockerizing the render script, setting up continuous delivery and lastly come up with a way to make it play with my nextjs/webpack/mdx pipeline which has not been done by anyone before… Playing with <code class="highlighter-rouge">knitr</code> then a bunch of similar tools for <code class="highlighter-rouge">jupyter</code>, I realized it’s just not worth doing myself. My original motivation for this was to write more and explore data more, not goofing around with these tools.</p>
 
-<p>So I looked up <em>“blogging with jupyter notebooks”</em><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. Luckily, this is not a novel concept. 2 projects showed up that do exactly it: <a href="https://jupyterbook.org">Jupyter Book</a> and <a href="https://github.com/fastai/fastpages">fastpages</a></p>
+<p>So I looked up <em>“blogging with jupyter notebooks”</em><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. Luckily, this is not a novel concept. Two projects showed up that do exactly it: <a href="https://jupyterbook.org">Jupyter Book</a> and <a href="https://github.com/fastai/fastpages">fastpages</a></p>
 
 <p><img src="/notes/images/diagram.png" alt="" /></p>
 
@@ -153,7 +153,7 @@ This is a guide for people who want to self-host their notebooks. If you have no
 
 <p>Once setup is done your site looks like <a href="https://fastpages.fast.ai">this</a>.</p>
 
-<p>At this point you can start writing, fastpages supports 3 formats: <code class="highlighter-rouge">md</code>, <code class="highlighter-rouge">ipynb</code> and <code class="highlighter-rouge">docx</code>. Perhaps the coolest feature is its out of the box support of instantly spinning up an execution environment for any <code class="highlighter-rouge">ipynb</code> script on binder and Google Colab:</p>
+<p>At this point you can start writing, fastpages supports 3 formats: <code class="highlighter-rouge">md</code>, <code class="highlighter-rouge">ipynb</code> and <code class="highlighter-rouge">docx</code>. Perhaps the coolest feature is its built-in badges for instantly spinning up an execution environment for any <code class="highlighter-rouge">ipynb</code> script on binder and Google Colab:</p>
 
 <p><img src="/notes/images/binder_colab.png" alt="" /></p>
 
