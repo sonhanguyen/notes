@@ -134,22 +134,22 @@ This is a guide for people who want to self-host their notebooks. If you have no
 
 <blockquote>
   <p>If you are not familiar with the term, a programming notebook is a type of document where you can experiment with code and see the result next to it visuallized as graphs or tables. This is one of the ways scientists and data analysts use the power of programming to tell stories.
-<em><a href="https://observablehq.com/explore">observablehq</a> is one example and another one, <code class="highlighter-rouge">jupyter</code>, is the most widely used computational notebook format.</em></p>
+<em><a href="https://observablehq.com/explore">observablehq</a> is one example and another one, <a href="https://jupyter.org">jupyter</a>, is the most widely used computational notebook format.</em></p>
 </blockquote>
 
-<p>Anyhow, the tasks were: dockerizing the render script, setting up continuous delivery and lastly come up with a way to make it play with my nextjs/webpack/mdx pipeline which has not been done by anyone before… After playing with <code class="highlighter-rouge">knitr</code> then a bunch of similar tools for <a href="https://jupyter.org">jupyter</a>, I realised it’s just not worth doing myself. My original motivation is to write more and explore data more, not goofing around with these tools.</p>
+<p>Anyhow, the tasks were: dockerizing the render script, setting up continuous delivery and lastly come up with a way to make it play with my nextjs/webpack/mdx pipeline which has not been done by anyone before… After playing with <code class="highlighter-rouge">knitr</code> then a bunch of similar tools for <code class="highlighter-rouge">jupyter</code>, I realised it’s just not worth doing myself. My original motivation is to write more and explore data more, not goofing around with these tools.</p>
 
 <p>So I looked up <em>“blogging in jupyter notebooks”</em><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. Luckily, this is not a novel concept. 2 projects showed up that do exactly it: <a href="https://jupyterbook.org">Jupyter Book</a> and <a href="https://github.com/fastai/fastpages">fastpages</a></p>
 
 <p><img src="/notes/images/diagram.png" alt="" /></p>
 
-<p>It doesn’t seem that one of them is clearly better than the other. <code class="highlighter-rouge">Jupyter Book</code> has a neat layout that is also suitable for book publishing and a git-friendly format. On the other hand, <code class="highlighter-rouge">fastpages</code>’s layout seems minimalistic enough for blogging and it comes with github actions that are super easy to set up, so I went with it.</p>
+<p>It doesn’t seem that one of them is clearly better than the other. <code class="highlighter-rouge">Jupyter Book</code> has a neat layout that is also suitable for book publishing and a git-friendly format. On the other hand, <code class="highlighter-rouge">fastpages</code>’s layout seems minimalistic enough for blogging and it comes with github <code class="highlighter-rouge">actions</code> that are super easy to set up, so I went with it.</p>
 
 <h3 id="fastaifastpages-setup"><code class="highlighter-rouge">Fastai/fastpages</code> setup</h3>
 
 <p>One thing that I love about <code class="highlighter-rouge">fastpages</code> is how easy it is to get started. It takes you about 5 steps in 10 minutes to get a website deployed on github pages <strong>with continuous delivery</strong>. The fact that you don’t need separate services for hosting, CMS, CI/CD or even a domain makes this a perfect fit for aspiring learners of data science/dataviz, who aren’t always from an IT background, to start blogging. All they need is a github account.</p>
 
-<p>The process start with <a href="https://github.com/fastai/fastpages#setup-instructions">one click</a>, essentially <code class="highlighter-rouge">fork</code>ing the project into your github account, a bot then opens a pull request (<code class="highlighter-rouge">PR</code>) for you to configure with easy instructions. “easy” but obviously not like wordpress or wix. After all, this is for those who are at least interested in programming so you need to familiarize yourself with the concept of a github <code class="highlighter-rouge">repository</code>, opening and merging a PR, then later <code class="highlighter-rouge">commit</code> &amp; <code class="highlighter-rouge">push</code>ing code to publish blog posts.</p>
+<p>The process starts with <a href="https://github.com/fastai/fastpages#setup-instructions">one click</a>, essentially <code class="highlighter-rouge">fork</code>ing the project into your github account, a bot then opens a pull request (<code class="highlighter-rouge">PR</code>) for you to configure with easy instructions. “easy” but obviously not like wordpress or wix. After all, this is for those who are at least interested in programming so you need to familiarize yourself with the concept of a github <code class="highlighter-rouge">repository</code>, opening and merging a PR, then later <code class="highlighter-rouge">commit</code> &amp; <code class="highlighter-rouge">push</code>ing code to publish blog posts.</p>
 
 <p>Once setup is done your site looks like <a href="https://fastpages.fast.ai">this</a>.</p>
 
