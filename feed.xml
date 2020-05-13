@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://sonhanguyen.github.io/notes/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sonhanguyen.github.io/notes/" rel="alternate" type="text/html" /><updated>2020-05-13T05:49:45-05:00</updated><id>https://sonhanguyen.github.io/notes/feed.xml</id><title type="html">The public learner</title><entry><title type="html">Blogging in jupyter notebooks</title><link href="https://sonhanguyen.github.io/notes/tutorial/2020/01/14/test-markdown-post.html" rel="alternate" type="text/html" title="Blogging in jupyter notebooks" /><published>2020-01-14T00:00:00-06:00</published><updated>2020-01-14T00:00:00-06:00</updated><id>https://sonhanguyen.github.io/notes/tutorial/2020/01/14/test-markdown-post</id><content type="html" xml:base="https://sonhanguyen.github.io/notes/tutorial/2020/01/14/test-markdown-post.html">&lt;p&gt;A couple of weeks ago I had this idea of setting up my personal website to render programming notebooks.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://sonhanguyen.github.io/notes/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sonhanguyen.github.io/notes/" rel="alternate" type="text/html" /><updated>2020-05-13T06:01:25-05:00</updated><id>https://sonhanguyen.github.io/notes/feed.xml</id><title type="html">The public learner</title><entry><title type="html">Blogging in jupyter notebooks</title><link href="https://sonhanguyen.github.io/notes/tutorial/jupyter/python/2020/01/14/test-markdown-post.html" rel="alternate" type="text/html" title="Blogging in jupyter notebooks" /><published>2020-01-14T00:00:00-06:00</published><updated>2020-01-14T00:00:00-06:00</updated><id>https://sonhanguyen.github.io/notes/tutorial/jupyter/python/2020/01/14/test-markdown-post</id><content type="html" xml:base="https://sonhanguyen.github.io/notes/tutorial/jupyter/python/2020/01/14/test-markdown-post.html">&lt;blockquote&gt;
+  &lt;p&gt;This is a guide for people who want to self-host their blog. If you have no problem putting your content behind someone else’s paywall you can try &lt;a href=&quot;https://medium.com/ai-in-plain-english/how-to-embed-code-or-jupyter-notebook-in-medium-7464411217e7&quot;&gt;embed jupyter notebook in medium&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A couple of weeks ago I had this idea of setting up my personal website to render programming notebooks.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;If you are not familiar with the term, basically a programming notebook is a type of document where you can experiment with code and see the result next to it visuallized as graphs or tables. This is how scientists and data analysts use the power of programming to tell stories.
@@ -11,11 +15,11 @@ https://observablehq.com/explore is an example&lt;/p&gt;
 
 &lt;p&gt;So I looked up &lt;em&gt;“blogging in jupyter notebooks”&lt;/em&gt;&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Luckily, this is not a novel concept. 2 projects showed up that do exactly it: &lt;a href=&quot;https://jupyterbook.org&quot;&gt;Jupyter Book&lt;/a&gt; and &lt;a href=&quot;https://github.com/fastai/fastpages&quot;&gt;fastpages&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;diagram.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/notes/images/diagram.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;It doesn’t seem that one of them is clearly better than the other. &lt;code class=&quot;highlighter-rouge&quot;&gt;Jupyter Book&lt;/code&gt; has a neat layout that is also suitable for book publishing (it’s actually intended for that) and a git-friendly format (&lt;code class=&quot;highlighter-rouge&quot;&gt;MyST&lt;/code&gt;). On the other hand, &lt;code class=&quot;highlighter-rouge&quot;&gt;fastpages&lt;/code&gt;’s layout seems minimalistic enough for blogging and it comes with github actions that are super easy to set up, so I went with it.&lt;/p&gt;
 
-&lt;h1 id=&quot;fastaifastpages-setup&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Fastai/fastpages&lt;/code&gt; setup&lt;/h1&gt;
+&lt;h2 id=&quot;fastaifastpages-setup&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Fastai/fastpages&lt;/code&gt; setup&lt;/h2&gt;
 
 &lt;p&gt;One thing that I love about &lt;code class=&quot;highlighter-rouge&quot;&gt;fastpages&lt;/code&gt; is how easy it is to get started. It takes you about 5 steps in 10 minutes to get a website deployed on github pages &lt;strong&gt;with continuous delivery&lt;/strong&gt;. The fact that you don’t need separate services for hosting, CMS, CI/CD or even a domain makes this a perfect fit for aspiring learners of data science/dataviz, who arent always from an IT background, to start blogging. All they need is a github account.&lt;/p&gt;
 
@@ -25,11 +29,11 @@ https://observablehq.com/explore is an example&lt;/p&gt;
 
 &lt;p&gt;At this point you can start writing, fastpages support 3 formats: &lt;code class=&quot;highlighter-rouge&quot;&gt;md&lt;/code&gt;, jupyter notebook and &lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt;. Perhaps the coolest feature is its out of the box support of instantly spinning up and execution environment for any jupyter script on binder and Google Colab:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;binder_colab.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/notes/images/binder_colab.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Supporting docx is also an interesting choice and I believe this is to make it more friendly to people who aren’t geeks. If you have a CV in docx format and want to use fastpages to showcase their works you can just chuck it in along side with the rest of their writting. Even as a web developer I have no shame in saying that I sometimes layout better in MS Word’s borderless tables than in css.&lt;/p&gt;
+&lt;p&gt;Supporting docx is also an interesting choice and I believe this is to make it more friendly to people who aren’t geeks. If you have a CV in docx format and are using fastpages to showcase your works you can just chuck it in along side with the rest of their writting. Even as a web developer I have no shame in saying that I sometimes layout better in MS Word’s borderless tables than in css.&lt;/p&gt;
 
-&lt;p&gt;There are a lot more to fastpages which you can have a look at the &lt;code class=&quot;highlighter-rouge&quot;&gt;README&lt;/code&gt; to find out. Out of the box you can embed code, youtube videos &amp;amp; tweets. They are all powered by &lt;a href=&quot;https://github.com/planetjekyll/awesome-jekyll-plugins&quot;&gt;Jekyll plugins&lt;/a&gt; so if you are familiar with that ecosystem you can start tweaking the theme and add plugins at this point. Comments are also supported and you can either use &lt;a href=&quot;https://desiredpersona.com/disqus-comments-jekyll/&quot;&gt;disqus (needs set up)&lt;/a&gt; or just host all the comments in your github repo to make your site self-contained.&lt;/p&gt;
+&lt;p&gt;There are a lot more to fastpages which you can have a look at the &lt;code class=&quot;highlighter-rouge&quot;&gt;README&lt;/code&gt; to find out. Out of the box you can embed code, youtube videos &amp;amp; tweets. They are all powered by &lt;a href=&quot;https://github.com/planetjekyll/awesome-jekyll-plugins&quot;&gt;Jekyll plugins&lt;/a&gt; so if you are familiar with that ecosystem you can start tweaking the theme and add plugins at this point. For comments you can either use &lt;a href=&quot;https://desiredpersona.com/disqus-comments-jekyll/&quot;&gt;disqus (needs set up)&lt;/a&gt; or just host all the comments in your github repo to make your site self-contained.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Have fun blogging!&lt;/strong&gt;&lt;/p&gt;
 
@@ -39,4 +43,4 @@ https://observablehq.com/explore is an example&lt;/p&gt;
       &lt;p&gt;There is also &lt;a href=&quot;https://bookdown.org&quot;&gt;bookdown&lt;/a&gt; if you are interest in using &lt;code class=&quot;highlighter-rouge&quot;&gt;Rmd&lt;/code&gt; instead &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">A couple of weeks ago I had this idea of setting up my personal website to render programming notebooks.</summary></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><summary type="html">This is a guide for people who want to self-host their blog. If you have no problem putting your content behind someone else’s paywall you can try embed jupyter notebook in medium</summary></entry></feed>
