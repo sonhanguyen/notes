@@ -136,9 +136,9 @@ This is a guide for self-hosting notebooks. If you have no problem with putting 
 <strong>programming notebook:</strong> a type of document where you can experiment with code and see the result next to it visuallized as graphs or tables. This is one of the ways scientists and data analysts use the power of programming to tell stories. <a href="https://jupyter.org">Jupyter</a> is the most widely used notebook format and <a href="https://observablehq.com/explore">Observable</a> is another example.
 </sub></p>
 
-<p>Anyhow, the tasks were: dockerizing the render script, setting up continuous delivery and lastly come up with a way to make it play with my nextjs/webpack/mdx pipeline which has not been done by anyone before… Playing with <code class="highlighter-rouge">knitr</code> then a bunch of similar tools for <code class="highlighter-rouge">jupyter</code>, I realized it’s just not worth doing myself. My original motivation for this was to write more and explore data more, not goofing around with these tools.</p>
+<p>Anyhow, the tasks were: dockerizing the render script, setting up continuous delivery and lastly come up with a way to make it play with my nextjs<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>/webpack/mdx pipeline which has not been done by anyone before… Playing with <code class="highlighter-rouge">knitr</code> then a bunch of similar tools for <code class="highlighter-rouge">jupyter</code>, I realized it’s just not worth doing myself. My original motivation for this was to write more and explore data more, not goofing around with these tools.</p>
 
-<p>So I looked up <em>“blogging with jupyter notebooks”</em><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. Luckily, this is not a novel concept. Two projects for exactly it showed up: <a href="https://jupyterbook.org">Jupyter Book</a> and <a href="https://github.com/fastai/fastpages">fastpages</a></p>
+<p>So I looked up <em>“blogging with jupyter notebooks”</em><sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>. Luckily, this is not a novel concept. Two projects for exactly it showed up: <a href="https://jupyterbook.org">Jupyter Book</a> and <a href="https://github.com/fastai/fastpages">fastpages</a></p>
 
 <p><img src="/notes/images/diagram.png" alt="" /></p>
 
@@ -169,7 +169,10 @@ This is a guide for self-hosting notebooks. If you have no problem with putting 
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>There is also <a href="https://bookdown.org">bookdown</a> if you are interest in using <code class="highlighter-rouge">Rmd</code> instead <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>After writing this I found out <a href="https://gatsby-contrib.github.io/gatsby-transformer-ipynb/Three-Body%20Problem">someone wrote a Jupyter plugin for Gatsby</a>, I personally prefer nextjs but those who already have a site made with Gatsby can look into it. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>There is also <a href="https://bookdown.org">bookdown</a> if you are interest in using <code class="highlighter-rouge">Rmd</code> instead. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
